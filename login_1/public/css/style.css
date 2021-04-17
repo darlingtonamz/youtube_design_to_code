@@ -1,0 +1,179 @@
+body {
+  background-color: #e3e3e9;
+  font-family: 'Roboto', sans-serif;
+}
+
+.login-card {
+  background-color: #fff;
+  width: 80%;
+  min-height: 100px;
+  min-width: 600px;
+  max-width: 900px;
+  margin: auto;
+  margin-top: 50px;
+  box-shadow: 0px 6px 42px -7px rgba(0,0,0, .28);
+  display: flex;
+  border-radius: 3px;;
+}
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 900px) {
+  .login-card__right {
+    display: none;
+  }
+}
+
+.login-card__left {
+  flex: 1;
+}
+.login-card__left > .login-holder {
+  margin: 50px 25px;
+}
+.login-holder__title-block .title-block__title-holder {
+  margin-bottom: 15px;
+}
+.login-holder__title-block .title-block__title {
+  font-size: 2em;
+  color: #444444;
+  font-family: 'Montserrat';
+  font-weight: 500;
+}
+.login-holder__title-block .title-block__subtitle {
+  font-size: 0.8em;
+  color: #666666;
+}
+.login-holder__title-block .title-block__subtitle a{
+  text-decoration: none;
+  color: #1767D5;
+}
+.login-form__input-section {
+  position: relative;
+  margin: 30px 0 0 0;
+}
+.login-form__input-section input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #BFBFBF;
+  padding-bottom: 1em;
+}
+.login-form__input-section input:focus-visible {
+  outline: none;
+  border-bottom: 1px solid #1767D5;
+}
+.login-form__input-section .input-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #CBCBCB;
+}
+
+.login-form__misc-section {
+  display: flex;
+  margin-top: 20px;
+}
+.login-form__misc-section .misc-section__remember-me {
+  width: 50%;
+}
+.login-form__misc-section .misc-section__remember-me span{
+  font-size: 0.8em;
+  color: #808080;
+}
+.login-form__misc-section .misc-section__remember-me input{
+  /* outline: 1px solid #BFBFBF !important; */
+  border: 0;
+}
+.login-form__misc-section .misc-section__forgot-password {
+  width: 50%;
+  text-align: end;
+  color: #808080;
+  font-size: 0.8em;
+}
+.misc-section__forgot-password a:link, .misc-section__forgot-password a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+.misc-section__forgot-password a:hover {
+  text-decoration: none;
+  color: #1767D5;
+}
+.login-form__input-section .submit-button {
+  background-color: #1767D5;
+  color: #fff;
+  font-size: 1em;
+  max-width: 130px;
+  border-radius: 500px;
+  padding: 0.8em 2em;
+  box-shadow: 0px 6px 15px 1px rgba(0,126,255, .5);
+  border: none;
+  transition: box-shadow .3s;
+}
+.login-form__input-section .submit-button:hover {
+  box-shadow: 0px 6px 15px 5px rgba(0,126,255, .5);
+}
+
+.login-holder__social-block {
+  display: flex;
+  margin-top: 40px;
+}
+.login-holder__social-block .social-block__login-with {
+  flex: 1;
+  color: #606060;
+}
+.login-holder__social-block .social-block__button-holder button {
+  cursor: pointer;
+  border-radius: 500px;
+  width: 50px;
+  padding: 5px;
+  border: none;
+  color: #fff;
+  margin-left: 3px;
+  transition: box-shadow .3s;
+}
+.login-holder__social-block .social-block__button-holder button:hover {
+  background: initial;
+  color: #444444;
+  box-shadow: 0px 6px 15px 5px rgba(0,126,255, .5);
+}
+.social-block__button-holder button.fb {
+  background-color: #1252AB;
+}
+.social-block__button-holder button.tw {
+  background-color: #09AAFD;
+}
+.social-block__button-holder button.goog {
+  background-color: #F65A5A;
+}
+
+
+.login-card__right {
+  width: 50%;
+  background-image: url(../img/right_bg.jpg);
+  background-position: bottom;
+  flex: 1;
+  color: white;
+}
+.login-card__right-header .header-toolbar {
+  text-align: right;
+  padding: 10px;
+  font-size: 2em;
+}
+.right-message-holder {
+  text-align: center;
+  margin: auto;
+  margin: 15% 50px;
+}
+.right-message-holder .message span{
+  font-size: 2.5em;
+  font-family: 'Montserrat';
+  font-weight: 500;
+}
+.right-message-holder .message-divider {
+  border-bottom: 2px solid #fff;
+  width: 20%;
+  margin: 1.5em auto;
+}
+.right-message-holder .sub-message span{
+  font-size: 1.1em;
+  letter-spacing: 2px;
+  line-height: 1.4em;
+}
+
